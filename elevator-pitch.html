@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rania Ababssi | Elevator Pitch</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f7f5f0;
+    color: #292929;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: rgba(247,245,240,.96);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #ddd8cf;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #292929;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #444;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #8b7355;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    background: #8b7355;
+    transition: .3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+main {
+    padding-top: 78px;
+}
+
+.hero {
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 7% 70px;
+}
+
+.label {
+    color: #8b7355;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: .95;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #8b7355;
+}
+
+.hero p {
+    color: #666;
+    font-size: 17px;
+}
+
+.video-section {
+    padding: 20px 7% 120px;
+}
+
+.video-container {
+    max-width: 1100px;
+    margin: auto;
+
+    background: #1d1d1d;
+
+    padding: 10px;
+
+    box-shadow: 0 25px 70px rgba(0,0,0,.18);
+}
+
+video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #111;
+}
+
+.caption {
+    max-width: 700px;
+    margin: 25px auto 0;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.cta {
+    padding: 100px 9%;
+    background: #ebe7df;
+    text-align: center;
+}
+
+.cta h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #777;
+    max-width: 600px;
+    margin: auto auto 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #8b7355;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #6e5a43;
+}
+
+footer {
+    background: #1c1c1c;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+}
+
+@media(max-width:800px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+        letter-spacing: .5px;
+    }
+
+    .cta h2 {
+        font-size: 43px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+RANIA ABABSSI
+</a>
+
+<nav>
+<ul class="nav-links">
+
+<li>
+<a href="index.html">Bio</a>
+</li>
+
+<li>
+<a href="elevator-pitch.html" class="active">Elevator Pitch</a>
+</li>
+
+<li>
+<a href="portfolio.html">Portfolio</a>
+</li>
+
+<li>
+<a href="research.html">Research</a>
+</li>
+
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div>
+
+<div class="label">
+02 — Presentation
+</div>
+
+<h1>
+Elevator <span>Pitch</span>
+</h1>
+
+<p>
+Get to know Rania beyond the portfolio.
+</p>
+
+</div>
+
+</section>
+
+<section class="video-section">
+
+<div class="video-container">
+
+<video controls playsinline preload="metadata">
+
+<source src="ElevatorPitch.mp4" type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+</div>
+
+<p class="caption">
+Rania's personal introduction and professional elevator pitch.
+</p>
+
+</section>
+
+<section class="cta">
+
+<div class="label">
+Continue
+</div>
+
+<h2>
+Explore her work.
+</h2>
+
+<p>
+Discover selected architectural and academic projects.
+</p>
+
+<a href="portfolio.html" class="button">
+Explore Portfolio →
+</a>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 Rania Ababssi — Architecture Portfolio
+</footer>
+
+</body>
+</html>

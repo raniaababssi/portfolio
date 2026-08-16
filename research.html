@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rania Ababssi | Research</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f7f5f0;
+    color: #292929;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: rgba(247, 245, 240, 0.96);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #ddd8cf;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+
+    color: #292929;
+    text-decoration: none;
+
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #444;
+    text-decoration: none;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #8b7355;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 1px;
+
+    background: #8b7355;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    padding-top: 78px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 55vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 7%;
+}
+
+.label {
+    color: #8b7355;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #8b7355;
+}
+
+.hero p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   RESEARCH
+========================= */
+
+.research {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 20px 7% 120px;
+}
+
+
+/* =========================
+   RESEARCH CARD
+========================= */
+
+.research-card {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 35px;
+
+    padding: 55px 0;
+
+    border-bottom: 1px solid #ddd8cf;
+}
+
+.research-number {
+
+    font-family: "Playfair Display", serif;
+
+    color: #b59a76;
+
+    font-size: 25px;
+}
+
+.research-content h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(27px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.year {
+
+    display: inline-block;
+
+    color: #8b7355;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.research-description {
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 800px;
+
+    margin-bottom: 20px;
+}
+
+.role {
+
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border: 1px solid #d8d1c7;
+
+    color: #777;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.3px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    background: #8b7355;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+
+    background: #6e5a43;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+    padding: 110px 9%;
+
+    background: #252525;
+
+    color: white;
+
+    text-align: center;
+}
+
+.cta h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 55px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.cta p {
+
+    color: #bbb;
+
+    max-width: 650px;
+
+    margin: auto auto 30px;
+}
+
+.outline-button {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border: 1px solid #b59a76;
+
+    color: #b59a76;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+.outline-button:hover {
+
+    background: #b59a76;
+
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #1c1c1c;
+
+    color: #888;
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 800px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .research-card {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 45px 0;
+    }
+
+    .research-number {
+        font-size: 20px;
+    }
+
+    .cta h2 {
+        font-size: 43px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        RANIA ABABSSI
+    </a>
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Bio
+                </a>
+            </li>
+
+            <li>
+                <a href="elevator-pitch.html">
+                    Elevator Pitch
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html" class="active">
+                    Research
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div>
+
+        <div class="label">
+            04 — Research
+        </div>
+
+        <h1>
+            Research<br>
+            <span>& Publications</span>
+        </h1>
+
+        <p>
+            Academic research exploring architecture,
+            adaptive reuse, building performance,
+            evacuation systems, and fire safety.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     RESEARCH PUBLICATIONS
+========================= -->
+
+<section class="research">
+
+
+    <!-- =====================
+         RESEARCH 01
+    ====================== -->
+
+    <article class="research-card">
+
+        <div class="research-number">
+            01
+        </div>
+
+        <div class="research-content">
+
+            <div class="year">
+                2024
+            </div>
+
+            <h2>
+                Exploring Diverse Approaches To Adaptive Reuse
+                In Function In Yogyakarta: Comparison Of Omah UGM
+                And Restaurant Lumbung Mataram
+            </h2>
+
+            <p class="research-description">
+                This research explores adaptive reuse through a
+                comparison of Omah UGM and Restaurant Lumbung
+                Mataram in Yogyakarta, examining how architectural
+                and cultural considerations influence the transformation
+                and reuse of existing buildings.
+            </p>
+
+            <div class="role">
+                Co-author
+            </div>
+
+            <br>
+
+            <a
+                href="https://talenta.usu.ac.id/ijau/article/view/15356"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                View Publication →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =====================
+         RESEARCH 02
+    ====================== -->
+
+    <article class="research-card">
+
+        <div class="research-number">
+            02
+        </div>
+
+        <div class="research-content">
+
+            <div class="year">
+                2024
+            </div>
+
+            <h2>
+                Enhancing Lighting Efficiency in Kost's Rooms
+                by Utilizing Bamboo Panels
+            </h2>
+
+            <p class="research-description">
+                A research study investigating the use of bamboo
+                panels as an architectural material to improve
+                lighting efficiency and environmental performance
+                in kost rooms.
+            </p>
+
+            <div class="role">
+                Research Publication
+            </div>
+
+            <br>
+
+            <a
+                href="https://doi.org/10.32734/ijau.v8i1.14254"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                View Publication →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =====================
+         RESEARCH 03
+    ====================== -->
+
+    <article class="research-card">
+
+        <div class="research-number">
+            03
+        </div>
+
+        <div class="research-content">
+
+            <div class="year">
+                2025
+            </div>
+
+            <h2>
+                Evaluating the Performance of Evacuation Routes
+                in an Academic Facility Using Pathfinder Simulation
+                and Regulatory
+            </h2>
+
+            <p class="research-description">
+                This research evaluates evacuation routes in an
+                academic facility using Pathfinder simulation and
+                regulatory considerations, focusing on evacuation
+                movement, circulation, congestion, and emergency
+                egress performance.
+            </p>
+
+            <div class="role">
+                Co-author
+            </div>
+
+            <br>
+
+            <a
+                href="https://ejournal2.undip.ac.id/index.php/jadu/article/view/28897"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                View Publication →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =====================
+         RESEARCH 04
+    ====================== -->
+
+    <article class="research-card">
+
+        <div class="research-number">
+            04
+        </div>
+
+        <div class="research-content">
+
+            <div class="year">
+                2026
+            </div>
+
+            <h2>
+                Analysis of Evacuation Route and Fire Safety
+                in Main Library University Building
+            </h2>
+
+            <p class="research-description">
+                Research focused on evacuation routes and fire
+                safety considerations within a university library
+                environment, examining emergency egress and
+                building safety.
+            </p>
+
+            <div class="role">
+                Co-author & Research Assistant
+            </div>
+
+            <br>
+
+            <a
+                href="https://doi.org/10.20961/arst.v23i2.109839"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                View Publication →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =====================
+         RESEARCH 05
+    ====================== -->
+
+    <article class="research-card">
+
+        <div class="research-number">
+            05
+        </div>
+
+        <div class="research-content">
+
+            <div class="year">
+                2026
+            </div>
+
+            <h2>
+                Assessing Emergency Egress on Retail Environments
+                Through Pathfinder Simulation
+            </h2>
+
+            <p class="research-description">
+                Research examining emergency egress in retail
+                environments through Pathfinder simulation,
+                focusing on evacuation performance and emergency
+                movement.
+            </p>
+
+            <div class="role">
+                Co-author & Research Assistant
+            </div>
+
+            <br>
+
+            <a
+                href="https://doi.org/10.55606/jeei.v6i1.6707"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                View Publication →
+            </a>
+
+        </div>
+
+    </article>
+
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="label">
+        Continue Exploring
+    </div>
+
+    <h2>
+        Discover the projects.
+    </h2>
+
+    <p>
+        Explore Rania's selected architectural,
+        cultural, and urban design projects.
+    </p>
+
+    <a
+        href="portfolio.html"
+        class="outline-button"
+    >
+        Back to Portfolio →
+    </a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 Rania Ababssi — Architecture & Research Portfolio
+
+</footer>
+
+
+</body>
+
+</html>
